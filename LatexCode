@@ -1,0 +1,528 @@
+\documentclass[10.5pt]{article}
+\usepackage[a4paper,margin=0.6in]{geometry} % Slightly wider margins for better fit
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage[none]{hyphenat} % Prevents words like "sen-sitive" from breaking
+
+\pagenumbering{gobble}
+\renewcommand{\familydefault}{\sfdefault}
+
+% --- Defined Colors ---
+\definecolor{accent}{HTML}{0F3057}
+\definecolor{amazonblue}{HTML}{232F3E}
+\definecolor{primeblue}{HTML}{00A8E1}
+\definecolor{smileorange}{HTML}{FF9900}
+\definecolor{textgray}{HTML}{555555}
+
+% Set spacing for lists
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.2em}
+
+\begin{document}
+
+% --- Header Section ---
+\begin{minipage}[b]{0.7\textwidth}
+    {\fontsize{28}{30}\selectfont\bfseries\color{accent} Amazon Prime+} \\
+    \vspace{0.1cm}
+    {\large\color{textgray} Premium Integrated Subscription Ecosystem}
+\end{minipage}
+\hfill
+\definecolor{amazonblue}{HTML}{232F3E}
+\definecolor{primeblue}{HTML}{00A8E1}
+\definecolor{smileorange}{HTML}{FF9900}
+\begin{minipage}[b]{0.35\textwidth} % Slightly wider to fit the text + sign
+    \centering
+    \begin{tikzpicture}[yscale=0.5, xscale=0.8]
+        % The "amazon prime+" text
+        \node[inner sep=0pt, outer sep=0pt] at (0,0.5) {
+            \fontsize{18}{20}\selectfont\sffamily\bfseries
+            \color{amazonblue}amazon\hspace{1pt}\color{primeblue}prime\textsuperscript{+}
+        };
+        
+        % The famous smile arrow
+        \draw[smileorange, line width=2pt, line cap=round] (-1.8, 0.1) arc (200:340:2);
+        \fill[smileorange] (1.8, -0.4) -- (2.2, 0.2) -- (1.5, 0.1) -- cycle;
+    \end{tikzpicture}
+\end{minipage}
+
+\vspace{0.2cm}
+\hrule height 1pt
+\vspace{0.2cm}
+
+\textbf{1. Brainstorming of Product / Service Ideas}
+\begin{itemize}
+    \item \textbf{Amazon Prime} -- Premium subscription service
+    \item \textbf{Netflix} -- Digital streaming service
+    \item \textbf{Apple iPhone} -- Premium smartphone product
+    \item \textbf{Nike Sports Shoes} -- Branded footwear product
+\end{itemize}
+
+\vspace{0.2cm}
+
+\textbf{2. Shortlisting of Idea} \\
+I selected Amazon Prime due to its diversified structure combining e-commerce, logistics, and entertainment within a single subscription. The upgraded concept, \textbf{Amazon Prime+}, enhances value through intelligent personalization and service assurance.
+
+\vspace{0.2cm}
+
+\textbf{3. Selected Idea: Amazon Prime+ (Enhanced Model)} \\
+Amazon Prime+ builds upon fast delivery, free shipping, Prime Video, and Prime Music. The enhancement introduces a \textbf{Smart Choice Guarantee System}-an AI-driven layer that:
+\begin{itemize}
+    \item Suggests high-rated, low-return products
+    \item Provides priority customer support
+    \item Offers instant refund processing
+    \item Delivers personalized subscription insights
+\end{itemize}
+This shifts Prime from a delivery service to a smart decision-support ecosystem.
+
+\vspace{0.2cm}
+
+\textbf{4. Problem Identification} \\
+Consumers face decision fatigue, delivery uncertainty, multiple subscriptions, and time inefficiency. These factors reduce convenience and increase indirect costs.
+
+\vspace{0.2cm}
+
+\textbf{5. Need, Want, and Demand Addressed} \\
+\textbf{Need:} Convenience, reliability, speed, and simplified digital experiences. \\
+\textbf{Want:} Faster and smarter shopping, trusted recommendations, entertainment bundling, and premium assurance benefits. \\
+\textbf{Demand:} When customers are willing to pay for enhanced efficiency, personalization, and service guarantee, wants transform into demand. Amazon Prime+ fulfills this demand through an intelligent, integrated, value-added subscription ecosystem.
+
+\vspace{0.2cm}
+
+% --- Enhanced Venn Diagram ---
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+
+% Circle Fill (Transparent Overlap)
+\begin{scope}[fill opacity=0.15]
+    \fill[amazonblue] (-1.8, 1.2) circle (3.0cm);
+    \fill[primeblue] (1.8, 1.2) circle (3.0cm);
+    \fill[smileorange] (0, -1.5) circle (3.0cm);
+\end{scope}
+
+% Crisp Circle Outlines
+\draw[amazonblue, thick, opacity=0.4] (-1.8, 1.2) circle (3.0cm);
+\draw[primeblue, thick, opacity=0.4] (1.8, 1.2) circle (3.0cm);
+\draw[smileorange, thick, opacity=0.4] (0, -1.5) circle (3.0cm);
+
+% Category Titles
+\node at (-3.5, 4.2) {\large\bfseries\color{amazonblue} NEED};
+\node at (3.5, 4.2) {\large\bfseries\color{primeblue!80!black} WANT};
+\node at (0, -4.9) {\large\bfseries\color{smileorange!80!black} DEMAND};
+
+% Need Text
+\node[align=center, text width=2.5cm] at (-3.2, 1.8) 
+    {\small Convenience\\Reliability\\Time-saving};
+
+% Want Text
+\node[align=center, text width=2.8cm] at (3.2, 1.8) 
+    {\small Faster Delivery\\Trusted Suggestions\\Bundled Content};
+
+% Demand Text
+\node[align=center, text width=4cm] at (0, -3.0) 
+    {\small Willingness to pay for\\enhanced intelligent\\premium services};
+
+% Central Integration Box (Prime+)
+\node[draw=amazonblue, fill=white, rounded corners=5pt, line width=1.2pt, inner sep=8pt, drop shadow, align=center] at (0, 0.4) {
+    \textbf{\color{amazonblue} Amazon Prime+} \\
+    \scriptsize\color{primeblue} Integrated Premium Ecosystem
+};
+
+\end{tikzpicture}
+\end{center}
+\vfill
+\begin{center}
+    \scriptsize\color{textgray} Amazon Prime+ Shortlisting Product $\cdot$ Page 1 $\cdot$ 2026 Strategy
+\end{center}
+\newpage % Moves to the next page
+
+% --- Page 2 Header ---
+\begin{minipage}[b]{0.7\textwidth}
+    {\fontsize{28}{30}\selectfont\bfseries\color{accent} Marketing Strategy} \\
+    \vspace{0.1cm}
+    {\large\color{textgray} The 4Ps Marketing Mix}
+\end{minipage}
+\hfill
+\definecolor{amazonblue}{HTML}{232F3E}
+\definecolor{primeblue}{HTML}{00A8E1}
+\definecolor{smileorange}{HTML}{FF9900}
+\begin{minipage}[b]{0.35\textwidth} % Slightly wider to fit the text + sign
+    \centering
+    \begin{tikzpicture}[yscale=0.5, xscale=0.8]
+        % The "amazon prime+" text
+        \node[inner sep=0pt, outer sep=0pt] at (0,0.5) {
+            \fontsize{18}{20}\selectfont\sffamily\bfseries
+            \color{amazonblue}amazon\hspace{1pt}\color{primeblue}prime\textsuperscript{+}
+        };
+        
+        % The famous smile arrow
+        \draw[smileorange, line width=2pt, line cap=round] (-1.8, 0.1) arc (200:340:2);
+        \fill[smileorange] (1.8, -0.4) -- (2.2, 0.2) -- (1.5, 0.1) -- cycle;
+    \end{tikzpicture}
+\end{minipage}
+
+\vspace{0.3cm}
+\hrule height 1pt
+\vspace{0.4cm}
+
+% --- Black Highlighted Section ---
+\begin{tikzpicture}
+\node[fill=amazonblue, text=white, font=\large\bfseries, minimum width=\linewidth, inner sep=10pt, align=left, rounded corners=2pt] {
+    THE 4Ps FRAMEWORK: AMAZON PRIME+
+};
+\end{tikzpicture}
+
+\vspace{0.2cm}
+
+The 4Ps Framework for Amazon Prime+ is as follows.
+
+
+% --- 1-Line Descriptions ---
+% --- Strictly 1-Line Humanized Descriptions ---
+\textbf{Product:} An all-in-one assistant combining your favorite media with a smarter, stress-free way to shop. \\
+\textbf{Price:} A single membership that pays for itself through massive bundled value and total peace of mind. \\
+\textbf{Place:} A digital store that lives in your pocket, ready anywhere and backed by a global delivery network. \\
+\textbf{Promotion:} Friendly, helpful reminders that meet you where you are to make your daily life a little easier.
+
+\vspace{-0.2cm}
+
+\vspace*{\fill} % Pushes the diagram toward the center vertically
+\begin{center}
+\begin{tikzpicture}[scale=1.8] % Increased scale from 1.1 to 1.5 for a larger diagram
+
+    % Define Colors
+    \definecolor{mixteal}{HTML}{00B2B2}
+    \definecolor{mixpink}{HTML}{D670A8}
+    \definecolor{mixorange}{HTML}{FF9933}
+    \definecolor{mixgreen}{HTML}{008F39}
+
+    % 1. PRODUCT (Top Left - Teal)
+    \fill[mixteal] (-0.08, 0.08) -- (-0.08, 2.5) arc (90:180:2.42) -- cycle;
+    \node[white, font=\bfseries\sffamily\large] at (-1.2, 1.3) {PRODUCT};
+    
+    % 2. PRICE (Top Right - Pink)
+    \fill[mixpink] (0.08, 0.08) -- (0.08, 2.5) arc (90:0:2.42) -- cycle;
+    \node[white, font=\bfseries\sffamily\large] at (1.2, 1.3) {PRICE};
+    
+    % 3. PLACE (Bottom Left - Orange)
+    \fill[mixorange] (-0.08, -0.08) -- (-0.08, -2.5) arc (270:180:2.42) -- cycle;
+    \node[white, font=\bfseries\sffamily\large] at (-1.2, -1.3) {PLACE};
+    
+    % 4. PROMOTION (Bottom Right - Green)
+    \fill[mixgreen] (0.08, -0.08) -- (0.08, -2.5) arc (270:360:2.42) -- cycle;
+    \node[white, font=\bfseries\sffamily\large] at (1.2, -1.3) {PROMOTION};
+    
+    % Central White Bar and Label with Shadow
+    \node[draw=white, fill=white, line width=3pt, inner sep=10pt, text=orange!90!black, font=\LARGE\bfseries\sffamily, drop shadow={opacity=0.2, shadow xshift=0.1cm, shadow yshift=-0.1cm}] at (0,0) {MARKETING MIX};
+
+\end{tikzpicture}
+\end{center}
+\vspace*{\fill} % Balance with the top fill to center it vertically
+\vspace{-0.2cm}
+% --- 4Ps Table ---
+\renewcommand{\arraystretch}{1.6} 
+\begin{flushleft}
+\begin{tabular}{|p{2.8cm}|p{12.2cm}|}
+    \hline
+    \rowcolor{Marketing Mix} 
+    \textbf{\color{white} P (Element)} & \textbf{\color{white} Details for the Service} \\
+    \hline
+    \textbf{\color{accent} Product} & 
+    \textbf{Core benefit:} Convenience and time-saving through a single membership. \newline
+    \textbf{Key features:} Free and fast delivery, Prime Video, Prime Music, Prime Reading, exclusive deals. \newline
+    \textbf{Variants:} Monthly and yearly subscription plans, student plans. \newline
+    \textbf{Branding:} Strong Amazon brand associated with trust and reliability. \\
+    \hline
+    \textbf{\color{accent} Price} & 
+    \textbf{Pricing level:} Mid to premium. \newline
+    \textbf{Pricing strategy:} Value-based pricing and subscription pricing. \newline
+    \textbf{Justification:} Customers receive multiple services at a lower combined cost compared to buying each service separately. \\
+    \hline
+    \textbf{\color{accent} Place} & 
+    \textbf{Distribution channels:} Online through Amazon website and mobile application. \newline
+    \textbf{Geographic focus:} Available across India and international markets where Amazon operates. \\
+    \hline
+    \textbf{\color{accent} Promotion} & 
+    \textbf{Advertising media:} Digital ads, TV commercials, social media platforms. \newline
+    \textbf{Digital platforms:} Amazon app, YouTube, Instagram, email marketing. \newline
+    \textbf{Sales promotions:} Free trial period, festive offers, student discounts. \newline
+    \textbf{Communication tone:} Friendly, convenience-focused, and value-driven. \\
+    \hline
+\end{tabular}
+\end{flushleft}
+\vfill
+\begin{center}
+    \scriptsize\color{textgray} Amazon Prime+ The 4Ps Marketing Mix $\cdot$ Page 2 $\cdot$ 2026 Strategy
+\end{center}
+\newpage % New page for Competitors
+
+% --- Header ---
+\begin{minipage}[b]{0.75\textwidth}
+    {\fontsize{28}{30}\selectfont\bfseries\color{accent} Market Comparison} \\
+    \vspace{0.1cm}
+    {\large\color{textgray} Competitive Market Analysis}
+\end{minipage}
+\hfill
+\definecolor{amazonblue}{HTML}{232F3E}
+\definecolor{primeblue}{HTML}{00A8E1}
+\definecolor{smileorange}{HTML}{FF9900}
+\begin{minipage}[b]{0.35\textwidth} % Slightly wider to fit the text + sign
+    \centering
+    \begin{tikzpicture}[yscale=0.5, xscale=0.8]
+        % The "amazon prime+" text
+        \node[inner sep=0pt, outer sep=0pt] at (0,0.5) {
+            \fontsize{18}{20}\selectfont\sffamily\bfseries
+            \color{amazonblue}amazon\hspace{1pt}\color{primeblue}prime\textsuperscript{+}
+        };
+        
+        % The famous smile arrow
+        \draw[smileorange, line width=2pt, line cap=round] (-1.8, 0.1) arc (200:340:2);
+        \fill[smileorange] (1.8, -0.4) -- (2.2, 0.2) -- (1.5, 0.1) -- cycle;
+    \end{tikzpicture}
+\end{minipage}
+
+\vspace{0.2cm}
+\hrule height 1pt
+\vspace{0.4cm}
+
+% --- Section 1: Defining Competition ---
+\textbf{Understanding the Competitive Field} \\
+Amazon Prime doesn't just compete with one type of company; it battles for a share of the customer's time, wallet, and lifestyle across multiple industries.
+
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Direct Competitors:} These are the "head-to-head" rivals who offer the exact same services, such as streaming movies or digital music.
+    \item \textbf{Indirect Competitors:} These are the "alternative" rivals who offer different services (like food delivery or shopping rewards) that still compete for the same monthly subscription budget.
+\end{itemize}
+
+\vspace{0.4cm}
+
+% --- Direct Competitors Section ---
+\begin{tikzpicture}
+\node[fill=amazonblue, text=white, font=\large\bfseries, minimum width=\linewidth, inner sep=6pt, align=left, rounded corners=2pt] {
+    DIRECT COMPETITORS: THE BATTLE FOR SCREEN TIME
+};
+\end{tikzpicture}
+
+\vspace{0.2cm}
+
+\textbf{1. Netflix - The Content Specialist} \\
+While Prime offers shopping, Netflix focuses entirely on being the best at storytelling. It is the go-to for people who prioritize high-quality original series and movies over shopping perks.
+
+\textbf{2. Disney+ Hotstar - The Live Experience} \\
+This is the major rival for sports fans and families. By bundling live cricket and regional shows, it captures the audience that values "appointment viewing" and live events.
+
+\vspace{0.5cm}
+
+% --- Indirect Competitors Section ---
+\begin{tikzpicture}
+\node[fill=smileorange, text=white, font=\large\bfseries, minimum width=\linewidth, inner sep=6pt, align=left, rounded corners=2pt] {
+    INDIRECT COMPETITORS: THE BATTLE FOR CONVENIENCE
+};
+\end{tikzpicture}
+
+\vspace{0.2cm}
+
+\textbf{3. Flipkart Plus - The Retail Alternative} \\
+Flipkart focuses on the "shopper first." While it doesn't have a massive movie library, its reward-based loyalty program attracts those who just want the best deals and fastest shipping on products.
+
+\textbf{4. Swiggy One - The Daily Essential} \\
+Swiggy competes for "subscription space." A customer might choose food delivery perks over video streaming if their daily priority is saving money on meals and groceries rather than watching a movie.
+\begin{center}
+\begin{tikzpicture}[scale=1.7, every node/.style={font=\sffamily}]
+
+    % --- Background Circles (Orbits) ---
+    \draw[primeblue!30, thick] (0,0) circle (2.2cm);
+    \draw[smileorange!30, thick] (0,0) circle (2.2cm);
+    
+    % --- Dividing Axis ---
+    \draw[gray!20, line width=1pt] (0, 2.5) -- (0, -2.5);
+    \draw[gray!20, line width=1pt] (-2.5, 0) -- (2.5, 0);
+
+    % --- Center Hub (Amazon Prime+) ---
+    \node[circle, fill=amazonblue, text=white, font=\bfseries\small, inner sep=6pt, align=center, drop shadow] (prime) at (0,0) {Amazon\\Prime+};
+
+    % --- Direct Rivals (Top Half - Blue) ---
+    \node[font=\bfseries\scriptsize\color{primeblue}] at (0, 2.8) {DIRECT RIVALS (Streaming \& Content)};
+    
+    % Netflix
+    \node[draw=primeblue, fill=white, rounded corners=4pt, thick, inner sep=5pt] (netflix) at (-1.8, 1.4) {\small Netflix};
+    \draw[->, >=stealth, primeblue, thick] (netflix) -- (prime);
+
+    % Disney+ Hotstar
+    \node[draw=primeblue, fill=white, rounded corners=4pt, thick, inner sep=5pt] (disney) at (1.8, 1.4) {\small Disney+ Hotstar};
+    \draw[->, >=stealth, primeblue, thick] (disney) -- (prime);
+
+    % --- Indirect Rivals (Bottom Half - Orange) ---
+    \node[font=\bfseries\scriptsize\color{smileorange}] at (0, -2.8) {INDIRECT RIVALS (Convenience \& Retail)};
+
+    % Flipkart Plus
+    \node[draw=smileorange, fill=white, rounded corners=4pt, thick, inner sep=5pt] (flipkart) at (-1.8, -1.4) {\small Flipkart Plus};
+    \draw[->, >=stealth, smileorange, thick] (flipkart) -- (prime);
+
+    % Swiggy One
+    \node[draw=smileorange, fill=white, rounded corners=4pt, thick, inner sep=5pt] (swiggy) at (1.8, -1.4) {\small Swiggy One};
+    \draw[->, >=stealth, smileorange, thick] (swiggy) -- (prime);
+
+    % --- Decorative Arcs ---
+    \draw[primeblue, line width=2pt] (-0.8, 2.2) arc (110:70:2.35);
+    \draw[smileorange, line width=2pt] (-0.8, -2.2) arc (250:290:2.35);
+
+\end{tikzpicture}
+\end{center}
+\vfill
+\begin{center}
+    \scriptsize\color{textgray} Amazon Prime+ Marketing Comparison $\cdot$ Page 3 $\cdot$ 2026 Strategy
+\end{center}
+
+\newpage 
+
+% --- Page Header ---
+\begin{minipage}[b]{0.7\textwidth}
+    {\fontsize{28}{30}\selectfont\bfseries\color{accent} Competitor Analysis} \\
+    \vspace{0.1cm}
+    {\large\color{textgray} Marketing Intelligence Gathering}
+\end{minipage}
+\hfill
+\definecolor{amazonblue}{HTML}{232F3E}
+\definecolor{primeblue}{HTML}{00A8E1}
+\definecolor{smileorange}{HTML}{FF9900}
+\begin{minipage}[b]{0.35\textwidth} % Slightly wider to fit the text + sign
+    \centering
+    \begin{tikzpicture}[yscale=0.5, xscale=0.8]
+        % The "amazon prime+" text
+        \node[inner sep=0pt, outer sep=0pt] at (0,0.5) {
+            \fontsize{18}{20}\selectfont\sffamily\bfseries
+            \color{amazonblue}amazon\hspace{1pt}\color{primeblue}prime\textsuperscript{+}
+        };
+        
+        % The famous smile arrow
+        \draw[smileorange, line width=2pt, line cap=round] (-1.8, 0.1) arc (200:340:2);
+        \fill[smileorange] (1.8, -0.4) -- (2.2, 0.2) -- (1.5, 0.1) -- cycle;
+    \end{tikzpicture}
+\end{minipage}
+
+\vspace{0.2cm}
+\hrule height 1pt
+\vspace{0.6cm}
+
+% --- Defining Colors locally to prevent Errors ---
+\definecolor{mixteal}{HTML}{00B2B2}
+\definecolor{mixpink}{HTML}{D670A8}
+
+% --- VISUAL: Competitive Scorecard (Bar Graph) ---
+\begin{center}
+\textbf{\color{accent} Strategic Parameter Comparison} \\
+\vspace{0.4cm}
+\begin{tikzpicture}[xscale=2.0, yscale=1.4]
+    % X-Axis Labels
+    \node[font=\tiny\bfseries] at (1,-0.6) {Entertainment};
+    \node[font=\tiny\bfseries] at (2.5,-0.6) {Delivery Speed};
+    \node[font=\tiny\bfseries] at (4,-0.6) {Price Value};
+    \node[font=\tiny\bfseries] at (5.5,-0.6) {Ecosystem};
+
+    % Legend
+    \fill[amazonblue] (6.8, 4) rectangle (7.1, 4.3); \node[right, font=\tiny] at (7.1, 4.15) {Amazon Prime+};
+    \fill[mixteal] (6.8, 3.2) rectangle (7.1, 3.5); \node[right, font=\tiny] at (7.1, 3.35) {Netflix};
+    \fill[smileorange] (6.8, 2.4) rectangle (7.1, 2.7); \node[right, font=\tiny] at (7.1, 2.55) {Flipkart/Swiggy};
+
+    % --- Bars (Using explicit color= syntax to avoid pgfkeys errors) ---
+    % Group 1: Entertainment
+    \fill[color=amazonblue] (0.7,0) rectangle (0.9, 4.2);
+    \fill[color=mixteal] (0.9,0) rectangle (1.1, 4.8);
+    \fill[color=smileorange] (1.1,0) rectangle (1.3, 2.5);
+
+    % Group 2: Delivery Speed
+    \fill[color=amazonblue] (2.2,0) rectangle (2.4, 4.8);
+    \fill[color=mixteal] (2.4,0) rectangle (2.6, 0.2);
+    \fill[color=smileorange] (2.6,0) rectangle (2.8, 4.5);
+
+    % Group 3: Price Value
+    \fill[color=amazonblue] (3.7,0) rectangle (3.9, 4.5);
+    \fill[color=mixteal] (3.9,0) rectangle (4.1, 3.5);
+    \fill[color=smileorange] (4.1,0) rectangle (4.3, 4.2);
+
+    % Group 4: Ecosystem
+    \fill[color=amazonblue] (5.2,0) rectangle (5.4, 4.9);
+    \fill[color=mixteal] (5.4,0) rectangle (5.6, 1.2);
+    \fill[color=smileorange] (5.6,0) rectangle (5.8, 3.0);
+
+    % Baseline
+    \draw[thick, gray!50] (0.5,0) -- (6.2,0);
+\end{tikzpicture}
+\end{center}
+\vspace{0.8cm}
+
+% --- Humanized Explanation Section ---
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{\color{accent} Why Marketing Intelligence?} \\
+    \fontsize{9}{11}\selectfont \color{textblack}
+    Marketing Intelligence acts as our strategic radar. It isn't just about data; it is about listening to the market's heartbeat. By gathering these insights, we shift from reacting to the market to actively shaping it, ensuring every update to Prime+ meets a real human need.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{\color{accent} The Goal of Competitor Analysis} \\
+    \fontsize{9}{11}\selectfont \color{textBlack}
+    Analyzing our rivals helps us define our own "edge." By understanding where Netflix leads in storytelling or where Swiggy leads in local speed, we can refine our ecosystem. We don't just copy them; we find the "white spaces" they've missed to provide a value they simply can't match.
+\end{minipage}
+
+\vspace{0.8cm}
+
+% --- Marketing Intelligence Table ---
+\begin{tikzpicture}
+\node[fill=amazonblue, text=white, font=\large\bfseries, minimum width=\linewidth, inner sep=8pt, align=left, rounded corners=2pt] {
+    MARKETING INTELLIGENCE TABLE
+};
+\end{tikzpicture}
+
+\vspace{0.4cm}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|p{2.6cm}|p{3.8cm}|p{3.8cm}|p{5.2cm}|}
+    \hline
+
+    \textbf{Competitor} & \textbf{Products / Services} & \textbf{Distribution Channels} & \textbf{Positioning / Value Proposition} \\
+    \hline
+    \textbf{Netflix} & Premium movies, global series, documentaries. & Global App, Smart TV, Web interface. & \textbf{Quality:} Focus on ad-free, high-budget original entertainment. \\
+    \hline
+    \textbf{Disney+ Hotstar} & Live sports, Disney IP, Regional shows. & Mobile App, Web, TV (Heavy in India). & \textbf{Entertainment:} Built for sports fans and multi-generational families. \\
+    \hline
+    \textbf{Flipkart Plus} & Retail loyalty rewards, early sales access. & Integrated Website and Mobile App. & \textbf{Affordability:} High-value rewards for budget-conscious retail shoppers. \\
+    \hline
+    \textbf{Swiggy One} & Free food, grocery, and gourmet delivery. & Mobile Application (Hyper-local). & \textbf{Convenience:} Removing friction from daily dining and household chores. \\
+    \hline
+\end{tabular}
+
+\vfill
+\begin{center}
+    \scriptsize\color{textgray} Amazon Prime+ Competitor Analysis $\cdot$ Page 4 $\cdot$ 2026 Strategy
+\end{center}
+% % --- Page Header ---
+% \begin{minipage}[b]{0.7\textwidth}
+%     {\fontsize{28}{30}\selectfont\bfseries\color{accent} Competitor Analysis} \\
+%     \vspace{0.1cm}
+%     {\large\color{textgray} Marketing Intelligence Gathering}
+% \end{minipage}
+% \hfill
+% \definecolor{amazonblue}{HTML}{232F3E}
+% \definecolor{primeblue}{HTML}{00A8E1}
+% \definecolor{smileorange}{HTML}{FF9900}
+% \begin{minipage}[b]{0.35\textwidth} % Slightly wider to fit the text + sign
+%     \centering
+%     \begin{tikzpicture}[yscale=0.5, xscale=0.8]
+%         % The "amazon prime+" text
+%         \node[inner sep=0pt, outer sep=0pt] at (0,0.5) {
+%             \fontsize{18}{20}\selectfont\sffamily\bfseries
+%             \color{amazonblue}amazon\hspace{1pt}\color{primeblue}prime\textsuperscript{+}
+%         };
+        
+%         % The famous smile arrow
+%         \draw[smileorange, line width=2pt, line cap=round] (-1.8, 0.1) arc (200:340:2);
+%         \fill[smileorange] (1.8, -0.4) -- (2.2, 0.2) -- (1.5, 0.1) -- cycle;
+%     \end{tikzpicture}
+% \end{minipage}
+
+
+\end{document}
